@@ -1,0 +1,157 @@
+
+.ChatWindow {
+    width: 823px;
+    height: 1024px;
+}
+
+.HeaderChatWindow {
+    width: 823px;
+    height: 60px;
+    border-bottom: 1px solid #F7F7F7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.HeaderChatWindowContainer {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FriendNameAndIndicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FriendName {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #202020;    
+}
+
+.indicatroOnline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.indicator {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #00C980;
+}
+
+.online {
+    margin-left: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #202020;
+    mix-blend-mode: normal;
+    opacity: 0.3;    
+}
+
+.settings {
+    width: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    margin-right: 35px;
+    background: none;
+    padding: 5px;
+}
+
+.settingsIcon {
+    width: 4.5px;
+    height: 4.5px;
+    border-radius: 50%;
+    background-color: rgba(95, 95, 95, 0.651);
+}
+
+.MessegeWindow {
+    width: 823px;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MessegeWindowContainer {
+    width: 753px;
+    height: 842px;
+    margin-top: 20px;
+}
+
+.MessegeHidden {
+    width: 753px;
+    overflow: hidden;
+}
+
+.MessegeScroll {
+    width: 753px;
+    height: 842px;    
+    overflow-y: scroll;
+}
+
+.MessegeScroll::-webkit-scrollbar { 
+    width: 0; 
+}
+.MessegeScroll { 
+    -ms-overflow-style: none; 
+}
+.MessegeScroll { 
+    overflow: -moz-scrollbars-none; 
+}
+
+
+.InputMessege {
+    width: 823px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputMessegeBlock {
+    width: 753px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    border-radius: 4px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    background: none;
+}
+
+.InputTextMessege {
+    width: 595px;
+    height: 18px;
+    padding: 1px 2px 1px 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #B4B4B4;    
+}
+
+.InputTextMessege::-webkit-scrollbar{
+    width: 0;
+    }

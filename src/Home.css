@@ -1,0 +1,144 @@
+
+.Home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+}
+
+.SignInBlock {
+    width: 430px;
+    height: 467px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TitleBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SignInAccount {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #202002;    
+}
+
+.Request {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.128571px;
+    color: #202002;
+    mix-blend-mode: normal;
+    opacity: 0.5;    
+}
+
+.FormBlockSignInAccount {
+    width: 430px;
+    height: 356px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04204);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.FormSignInAccount {
+    margin-top: 54px;
+    width: 340px;
+}
+
+.InputEmailBlock {
+    width: 340px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 4px;    
+}
+
+.InputEmail {
+    width: 320px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.114286px;
+    color: #202020;    
+}
+
+.IndicatorTruePassword {
+    width: 20px;
+    height: 20px;
+}
+
+.InputPasswordBlock {
+    width: 340px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 15px;    
+}
+
+.InputPassword {
+    width: 320px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.114286px;
+    color: #B4B4B4;    
+}
+
+.ButtonSignInAccount {
+    width: 340px;
+    height: 56px;
+    background: #4CA5FF;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;      
+    margin-top: 25px;  
+}
+
+.ButtonRegistretion {
+    width: 340px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.114286px;
+    color: #ADADAD;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,100 @@
+
+.activeContact .ContactCard {
+    background: #F3F7FF;
+}
+
+.ContactCard {
+    width: 319px;
+    height: 67px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4px;
+}
+
+.ContactCardContainer {
+    width: 281px;
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ContactAvatarContainer {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+}
+
+.ContactNameAndMessegeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 11px;
+}
+
+.ContactNameAndTimeMessageContainer {
+    width: 226px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ContactName {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #202020;    
+}
+
+.whenGetMessege {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #202020;
+    mix-blend-mode: normal;
+    opacity: 0.4;    
+}
+
+.previewGetMessegeContainer {
+    width: 226px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.previewGetMessege {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #202020;
+    mix-blend-mode: normal;
+    opacity: 0.4;    
+}
+
+.quantitiMessege {
+    background: #F46B6B;
+    border: 3px solid #FFFFFF; 
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.numberMessege {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;    
+}

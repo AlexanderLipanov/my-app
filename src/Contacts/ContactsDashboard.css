@@ -1,0 +1,129 @@
+.ContactsDashboard{
+    width: 319px;
+    height: 1024px;
+    border-right: 1px solid #F7F7F7;
+}
+
+.headerContactDashboard {
+    width: 319px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #F7F7F7;
+}
+
+.headerContactDashboardContainer {
+    width: 285px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listDilogsBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.listDialogs {
+    margin-left: 7px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #202020;
+    mix-blend-mode: normal;
+    opacity: 0.65;    
+    background: none;
+}
+
+.searchContacts {
+    width: 319px;
+    height: 87px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clearSearchContacts {
+    width: 20px;
+    height: 20px;
+    margin-top: 22px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.crest:first-child {
+    transform: rotate(-45deg);
+    margin-top: 3px;
+    border-radius: 3px;
+}
+
+.crest:last-child {
+    transform: rotate(45deg);
+    margin-top: -3px;
+    border-radius: 3px;
+}
+
+.crest {
+    display: block;
+    width: 15px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.clearSearchContacts_active .crest {
+    background-color: #919191;
+}
+
+.clearSearchContacts_active {
+    visibility: visible;
+}
+
+.inputSearchContacts {
+    width: 221px;
+    height: 38px;
+    padding: 2px 3px 2px 3px;
+    background: #F7F8F9;
+    border-radius: 2px;    
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #202020;
+    mix-blend-mode: normal;
+    opacity: 0.2;    
+}
+
+.contactsList {
+    width: 319px;
+    height: 875px;
+}
+
+.contactsListHidden::-webkit-scrollbar { 
+    width: 0; 
+}
+.contactsListHidden { 
+    -ms-overflow-style: none; 
+}
+.contactsListHidden { 
+    overflow: -moz-scrollbars-none; 
+}
+
+.contactsListScroll {
+    width: 319px;
+    overflow: hidden;
+    
+}
+
+.contactsListHidden {
+    width: 319px;
+    height: 875px;
+    overflow-y: scroll;
+}
