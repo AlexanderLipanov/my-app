@@ -11,7 +11,7 @@ class ChatWindow extends React.Component {
 
     constructor(props) {
         super(props);
-        
+
         this.state = {
             
             SendMesseges: [
@@ -24,11 +24,14 @@ class ChatWindow extends React.Component {
 
     ChangeInput = (e) => {
 
+        // Записывает новое сообщение в state
+
         this.setState({NewSendMessege: e.target.value});
-        console.log(this.state.NewSendMessege);
     }
 
     MessegeSend = () => {
+
+        // Новое сообщение записывает в массив отправленных сообщений в state`e
 
         this.setState({
             
@@ -36,20 +39,34 @@ class ChatWindow extends React.Component {
                                                             id: this.state.SendMesseges.length+1,
                                                             SndTime: new Date().toLocaleString()}]                                           
         });
-        this.setState({NewSendMessege: ''});
-        console.log(this.state.SendMesseges);
+        this.setState({NewSendMessege: ''});    // Зануляет input
+    }
+
+    MessegeSendKeyPress = (e) => {
+        
+        // Отправляет сообщение по нажатию клавиши Enter на input
+
+        if ( e.key === 'Enter' ) {
+            this.setState({
+            
+                SendMesseges: [...this.state.SendMesseges, {SndMessege: this.state.NewSendMessege, 
+                                                                id: this.state.SendMesseges.length+1,
+                                                                SndTime: new Date().toLocaleString()}]                                           
+            });
+            this.setState({NewSendMessege: ''}); // Зануляет input
+        }
     }
 
     render () {
-        let FilterIncMesseges = this.props.IncomeMesseges.filter(item => item.Incmessege !== '' );
+        let FilterIncMesseges = this.props.IncomeMesseges.filter(item => item.Incmessege !== '' ); // Фильирует пустые сообщения
         this.RenderIncomeMesseges = FilterIncMesseges.map( (IMR) => <IncomeMessege IncTime={IMR.IncTime} Incmessege={IMR.Incmessege} /> );
 
-        let FilterSndMesseges = this.state.SendMesseges.filter(item => item.SndMessege !== '' );
+        let FilterSndMesseges = this.state.SendMesseges.filter(item => item.SndMessege !== '' ); // Фильирует пустые сообщения
         this.SendMessegesRender = FilterSndMesseges.map( (SM) => <SendMessege SndMessege={SM.SndMessege} 
                                                                     key={SM.id} id={SM.id} SndTime={SM.SndTime} /> );
 
         return( 
-<div id={this.props.id} className="ChatWindow">
+        <div id={this.props.id} className="ChatWindow">
             <div className="HeaderChatWindow">
                 <div className="HeaderChatWindowContainer">
                     <div className="FriendNameAndIndicator">
@@ -84,7 +101,7 @@ class ChatWindow extends React.Component {
                     <button className="SmilesButton">
                         <img src={SmilesIcon} alt="" className="SmilesIcon" />
                     </button>
-                    <textarea onChange={this.ChangeInput} value={this.state.NewSendMessege}  type="text" placeholder="Введите текст сообщения…" className="InputTextMessege" />
+                    <textarea onKeyPress={this.MessegeSendKeyPress} onChange={this.ChangeInput} value={this.state.NewSendMessege}  type="text" placeholder="Введите текст сообщения…" className="InputTextMessege" />
                     <button className="SendPhotoButton">
                         <img src={SendPhotoIcon} alt="" className="SendPhotoIcon" />
                     </button>

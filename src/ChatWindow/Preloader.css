@@ -1,0 +1,81 @@
+
+.preloader {
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+.animationDiv {
+    width: 25px;
+    height: 25px;
+    background: rgb(102, 102, 102);
+    opacity: 0.7;
+}
+
+.animationDiv:first-child {
+    animation: updown 1s linear infinite;
+}
+
+.animationDiv:nth-child(2) {
+    animation: reverseupdown 1s linear infinite;
+}
+
+.animationDiv:nth-child(3) {
+    animation: updown 1s linear infinite;
+}
+
+.animationDiv:last-child {
+    animation: reverseupdown 1s linear infinite;
+}
+
+
+@keyframes updown {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: rotate(135deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes reverseupdown {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    75% {
+        transform: rotate(-135deg);
+    }
+
+    100% {
+        transform: rotate(-180deg);
+    }
+}

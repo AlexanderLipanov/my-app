@@ -103,7 +103,7 @@
 
 .contactsList {
     width: 319px;
-    height: 875px;
+    height: 825px;
 }
 
 .contactsListHidden::-webkit-scrollbar { 
@@ -124,6 +124,21 @@
 
 .contactsListHidden {
     width: 319px;
-    height: 875px;
+    height: 825px;
     overflow-y: scroll;
+}
+
+.logOutBlock {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logOut {
+    background: none;
+    color: rgb(131, 131, 131);
+    opacity: 0.8;
 }

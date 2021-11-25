@@ -114,6 +114,10 @@
 .ButtonSignInAccount {
     width: 340px;
     height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background: #4CA5FF;
     border-radius: 4px;
     font-style: normal;

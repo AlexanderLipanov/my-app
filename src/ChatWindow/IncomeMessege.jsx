@@ -1,10 +1,10 @@
 import React from "react";
 import './IncomeMessege.css';
 
-function IncomeMessege(props) {
+const IncomeMessege = (props) => {
 
     return(
-<div id={props.id} className="IncomeMessege">
+        <div id={props.id} className="IncomeMessege">
             <div className="IncomeMessegeContainer">
                 <div className="IncomeAvatarAndMessege">
                     <div className="AvatarIncomeMessege">

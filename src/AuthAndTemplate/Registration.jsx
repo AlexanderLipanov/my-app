@@ -16,23 +16,31 @@ class Registration extends React.Component {
     }
 
     changeRegistrationEmail = (e) => {
+
+        // Записывает электронную почту в state
+
         this.setState({ email: e.target.value });
-        console.log(this.state.email);
     }
 
     changeRegistrationName = (e) => {
+
+        // Записывает имя в state
+
         this.setState({ name: e.target.value });
-        console.log(this.state.name);
     }
 
     changeRegistrationPassword = (e) => {
+
+        // Записывает пароль в state
+
         this.setState({ password: e.target.value });
-        console.log(this.state.password);
     }
 
     changeRegistrationRepeatPassword = (e) => {
+
+        // Записывает повторенный пароль в state
+
         this.setState({ repeatPassword: e.target.value });
-        console.log(this.state.repeatPassword);
     }
 
     render() {

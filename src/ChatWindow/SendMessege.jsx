@@ -1,7 +1,7 @@
 import React from "react";
 import './SendMessege.css';
 
-function SendMessege(props) {
+const SendMessege = (props) => {
 
     return(
 

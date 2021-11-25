@@ -5,10 +5,15 @@ import './ContactCard.css';
 
 function ContactCard(props) {
 
-    let IncomeMesseges = props.IncomeMesseges.map( (item) => item.Incmessege );
-    let LastMessege = IncomeMesseges.pop().slice(0, 25);
-    let quantilyFilterIncMesseges = props.IncomeMesseges.filter(item => item.Incmessege !== '' );
-    let quantilyMesseges = quantilyFilterIncMesseges.length.toString();
+    let IncomeMesseges = props.IncomeMesseges.map( (item) => item.Incmessege ); // Из пришедших данных выбираем только пришедшие сообщения
+    let LastMessege = IncomeMesseges.pop().slice(0, 25); // Показыаем в карточке контакта только последнее сообщение длиною не более 25 символов
+    let quantilyFilterIncMesseges = props.IncomeMesseges.filter(item => item.Incmessege !== '' ); // Не считаем количество входящих пустых сообщений
+    let quantilyMesseges = quantilyFilterIncMesseges.length.toString(); // Считаем количество входящих сообщений от контакта
+
+    let quantitiMessege = 'quantitiMessege' // Если сообщений нет, индикатор не показываем
+    if (quantilyMesseges === '0') {
+        quantitiMessege = 'quantitiMessege_disActive'
+    }
 
     return(
     <NavLink activeClassName='activeContact' to={`/Chat/${props.id}`}>
@@ -30,8 +35,8 @@ function ContactCard(props) {
                         <p className="previewGetMessege">
                         {LastMessege}
                         </p>
-                        <div className="quantitiMessege">
-                            <p className="numberMessege">
+                        <div className={quantitiMessege}>
+                            <p className='numberMessege'>
                                 {quantilyMesseges}
                             </p>
                         </div>
